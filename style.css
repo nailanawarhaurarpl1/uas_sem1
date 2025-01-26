@@ -1,0 +1,42 @@
+body {
+    background-color: #FFCFB3;
+    margin-top: 150px;
+    font-family: Arial, sans-serif;
+}
+.daftar-kotak {
+    background-color: #FFCFB3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #E78F81;
+    width: 300px;
+}
+.daftar-kotak h2 {
+    color: white;
+}
+input {
+    width: 90%;
+    padding: 15px;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+}
+.daftar-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.daftar-btn:hover {
+    background-color: darkgreen;
+}
+.register-link {
+    margin-top: 10px;
+    color: white;
+}
+.register-link a {
+    color: lime;
+    text-decoration: none;
+}
