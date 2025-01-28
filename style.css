@@ -1,42 +1,51 @@
+
 body {
-    background-color: #FFCFB3;
-    margin-top: 150px;
-    font-family: Arial, sans-serif;
+    background:  #FF5580;
 }
-.daftar-kotak {
-    background-color: #FFCFB3;
-    padding: 30px;
+.kotak {
+    background: white;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #E78F81;
-    width: 300px;
+    width: 350px;
 }
-.daftar-kotak h2 {
-    color: white;
+.kotak h2 {
+    color: #333;
 }
-input {
-    width: 90%;
-    padding: 15px;
-    background: #333;
-    border: none;
+.kolom {
+    text-align: left;
+}
+.kolom label {
+    font-size: 14px;
+    color: #333;
+}
+.kolom input {
+    margin-top: 5px;
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
-.daftar-btn {
+.btn {
     width: 100%;
     padding: 10px;
-    background-color: green;
+    background: #FF5580;
+    color: white;
     border: none;
-    color: white;
     border-radius: 5px;
-    cursor: pointer;
+    font-size: 16px;
 }
-.daftar-btn:hover {
-    background-color: darkgreen;
+.btn:hover {
+    background: #FF9EAA;
 }
-.register-link {
-    margin-top: 10px;
-    color: white;
+.link {
+    font-size: 14px;
+    color: #333;
 }
-.register-link a {
-    color: lime;
+.link a {
+    color: #FF5580;
     text-decoration: none;
+}
+.link a:hover {
+    color: #FF9EAA;
 }

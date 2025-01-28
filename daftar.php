@@ -10,18 +10,17 @@ if (isset($_POST['daftar'])) {
     $result = mysqli_query($mysqli, $check_email);
 
     if (mysqli_num_rows($result) > 0) {
-        echo "Email sudah terdaftar!";
+        echo "<script>alert('Email sudah terdaftar!');</script>";
     } else {
         $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
         if (mysqli_query($mysqli, $query)) {
-            echo "Pendaftaran berhasil!";
+            echo "<script>alert('Pendaftaran berhasil!');window.location.href = 'login.php';</script>";
         } else {
-            echo "Error: " . $query . "<br>" . mysqli_error($mysqli);
+            echo "<script>alert('Terjadi kesalahan!');</script>";
         }
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,20 +28,29 @@ if (isset($_POST['daftar'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Register</h2>
-    <form method="POST" action="">
-        <label for="username">Username: </label>
-        <input type="text" name="username" required><br><br>
-        
-        <label for="email">Email: </label>
-        <input type="email" name="email" required><br><br>
-        
-        <label for="password">Password: </label>
-        <input type="password" name="password" required><br><br>
-        
-        <button type="submit" name="daftar">Daftar</button>
-    </form>
+    <center><br><br><br><br>
+<div class="kotak">
+        <h2>Daftar</h2>
+        <form method="POST" action="daftar.php">
+            <div class="kolom">
+                <label>Nama Pengguna</label>
+                <input type="text" name="username" placeholder="Masukkan nama pengguna" required><br><br>
+            </div>
+            <div class="kolom">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Masukkan email" required><br><br>
+            </div>
+            <div class="kolom">
+                <label>Kata Sandi</label>
+                <input type="password" name="password" placeholder="Masukkan kata sandi" required><br><br><br>
+            </div>
+            <button type="submit" name="daftar" class="btn">Daftar</button><br><br>
+        </form>
+        <span class="link">Sudah punya akun? <a href="login.php">Masuk</a></span>
+    </div>
+    </center>
 </body>
 </html>

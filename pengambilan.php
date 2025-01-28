@@ -8,12 +8,9 @@ include_once("sidebar.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Pengambilan</title>
 </head>
 <body>
-    <div style="margin-left: 220px; margin-top: 80px;">
-        <h1>Ini Dashboard</h1>
-    </div>
+    <h1>ini engambilan</h1>
 </body>
-
 </html>
